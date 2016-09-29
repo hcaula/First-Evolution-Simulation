@@ -33,6 +33,8 @@ I also expect that, for each time I run the simulation, I have different final g
 Most of my experiments tended to 996 instead of the expected 999. I then assume that, since there was no "threat", the nodes never had to become greater than 996.
 By the end, every node had an average of 996, so everyone would survive (well, except for the unlucky ones that, because of the sorting algorithm, would be on the bottom half of the array and get killed).
 
+Also, there was nothing that could change them. Once the top half consist all of the same number, there can never occur a mutation.
+
 Maybe this would change if I used a larger broad of numbers (more than 999) and perhaps increase the quantity variables to compare (add a "center" value to the node, or use another statistical measure in addition to "average").
 
 This is yet really primitive, but maybe it can be the start of something great.
