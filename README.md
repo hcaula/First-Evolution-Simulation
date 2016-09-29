@@ -8,7 +8,7 @@ A node is a struct with three atributes:
 - a right associated number;
 - an average between its left and right numbers.
 
-So, what I try to do is, by starting with an array of random generated left and right numbers nodes, do a "natural selection" to pick those with the greatests average numbers.
+So, what I try to do is, by starting with an array of random generated left and right numbers nodes, do a "natural selection" to pick those with the greatest average numbers.
 
 First, we generate the "world" and name it Generation 0. Then, we sort its average numbers from greatest to lowest. Finally, we eliminate the bottom half of it.
 
