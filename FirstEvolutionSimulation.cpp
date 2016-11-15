@@ -1,16 +1,16 @@
 #include <iostream>
 #include <cstdlib>
 using namespace std;
- 
+
 struct Node {
     double left;
     double right;
-    double average;
+    double average //hello;
 };
- 
+
 Node table[100];
 int genNum = 0;
- 
+
 void sortWorld(){
     bool swaped = true;
     while (swaped){
@@ -25,7 +25,7 @@ void sortWorld(){
         }
     }
 }
- 
+
 void showWorld(){
     double smallest = 10000;
     double biggest = -1;
@@ -48,7 +48,7 @@ void showWorld(){
     << "\nAverage: " << (sum/100)
     << "\nBest: " << biggest << "\n\n";
 }
- 
+
 void reproduce(){
     genNum++;
     for(int i = 0; i < 50; i = i + 2){
@@ -62,7 +62,7 @@ void reproduce(){
     sortWorld();
     showWorld();
 }
- 
+
 void createWorld(){
     for(int i = 0; i < 100; i++){
         Node N;
@@ -74,14 +74,14 @@ void createWorld(){
     sortWorld();
     showWorld();
 }
- 
+
 void doItTill(int n){
     createWorld();
     while (genNum < n){
         reproduce();
     }
 }
- 
+
 int main() {
     doItTill(15);
     return 0;
