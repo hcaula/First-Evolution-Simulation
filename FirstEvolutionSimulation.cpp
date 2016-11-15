@@ -5,8 +5,8 @@ using namespace std;
 struct Node {
     double left;
     double right;
-    double average; //hello2Imean wtf
-};
+    double average; //hello2mean wtf
+};s
 
 Node table[100];
 int genNum = 0;
