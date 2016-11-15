@@ -5,7 +5,7 @@ using namespace std;
 struct Node {
     double left;
     double right;
-    double average //hello;
+    double average; //hello2
 };
 
 Node table[100];
